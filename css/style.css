@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(241, 241, 241);
+}
+.checkbox2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.checkbox2 label{
+    float:left;
+}
+.checkbox2 button{
+    float:right;
+   
+}
+.in-div{
+    border:2px solid black;
+    background-color: red;
+    width:100%;
+}
+
+.bold{
+    font-weight:bold;
+}
+.gray{
+    color:gray;
+    font-weight:500;
+}
+
+.in{
+    font-size: 2rem;
+}
+.min-bold{
+    text-decoration: none;
+    font-weight:bold;
+    color:royalblue;
+}
+
+/* @media query */
+@media (max-width:1200px){
+    
+  
+
+}
+
+@media (max-width:991px){
+    
+    section{
+        padding:0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header label{
+        visibility: visible;
+        opacity: 1;
+        color:white;
+    }
+    .box3{
+        width: 100%;
+        padding:20px 20px;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left: 0;
+        width:100%;
+        background:#fff;
+        padding:1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar a{
+        display: block;
+        margin:2rem 0;
+        font-size: 2rem;
+        color:var(--pink);
+    }
+
+    header .navbar a:active{
+        color:var(--pink);
+    }
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content:'\f00d';
+    }
+
+    .home{
+        flex-flow: column-reverse;
+    }
+
+    .home .image img{
+        width:100%;
+    }
+
+    .home .content h3{
+        font-size: 3.6rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+    .about{
+        background-position: right;
+    }
+
+    .newsletter p{
+        width:auto;
+    }
+    .heading{
+        text-align:center;
+    }
+
+}
+
+@media (max-width:450px){
+    .box3{
+        width: 100%;
+        padding:20px 20px;
+    }
+    .heading{
+        text-align:center;
+    }
+
+    
+    html{
+        font-size: 50%;
+    }
+
+    .about .column .content .buttons a{
+        width:100%;
+        text-align: center;
+    }
+
+    .about .column .content .buttons a:last-child{
+        margin: 1rem 0;
+    }
+
+}
+
+.heading{
+    text-align:left;
+    padding-left: 5px;
+}
